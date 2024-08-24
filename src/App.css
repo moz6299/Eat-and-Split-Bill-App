@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.top-left,
+.top-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-left,
+  .top-right {
+    width: 100%;
+  }
+}
